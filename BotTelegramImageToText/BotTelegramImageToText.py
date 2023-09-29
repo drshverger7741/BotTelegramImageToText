@@ -6,7 +6,7 @@ import io
 import numpy as np
 
 # Замените <YOUR_API_KEY> на ваш ключ API Google Cloud Vision
-API_KEY = 'api key google'
+API_KEY = 'api key google cloud vosion'
 
 # Создайте экземпляр клиента Google Cloud Vision
 client = vision.ImageAnnotatorClient.from_service_account_json('credentials.json')
@@ -17,7 +17,7 @@ bot = telebot.TeleBot('API key tg')
 # Обработчик команды /start
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
-    bot.reply_to(message, "1")
+    bot.reply_to(message, "Hi! Send me an image for text recognition.")
 
 # Обработчик получения изображения
 @bot.message_handler(content_types=['photo'])
