@@ -8,6 +8,7 @@ import numpy as np
 # Замените <YOUR_API_KEY> на ваш ключ API Google Cloud Vision
 API_KEY = 'api key google cloud vosion'
 
+
 # Создайте экземпляр клиента Google Cloud Vision
 client = vision.ImageAnnotatorClient.from_service_account_json('credentials.json')
 
